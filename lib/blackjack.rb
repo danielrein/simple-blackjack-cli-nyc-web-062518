@@ -28,9 +28,10 @@ def initial_round
   total
 end
 
-def hit?(num)
+def hit?(current)
   prompt_user
-  num + get_user_input
+  num = get_user_input
+  current + num
 
 end
 

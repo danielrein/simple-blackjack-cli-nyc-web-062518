@@ -37,7 +37,7 @@ def hit?(num)
     total = num + deal_card
   else
     invalid_command
-    hit?(num)
+    prompt_user
   end
   total
 end

@@ -35,7 +35,7 @@ def hit?(num)
     total = num
   elsif i == 'h'
     total = num + deal_card
-    puts "total = #{total}"
+    # puts "total = #{total}"
   else
     invalid_command
     prompt_user

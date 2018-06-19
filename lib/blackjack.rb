@@ -30,7 +30,9 @@ end
 
 def hit?(num)
   prompt_user
-  num + get_user_input.to_i
+  case get_user_input
+  when 'h' deal_card
+  when !'h'num + get_user_input.to_i
 end
 
 def invalid_command

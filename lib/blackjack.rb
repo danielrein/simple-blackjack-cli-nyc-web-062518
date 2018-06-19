@@ -33,8 +33,10 @@ def hit?(num)
   i = get_user_input
   if i == 'h'
     deal_card
+  end
   else
     num + i.to_i
+  end
 end
 
 def invalid_command

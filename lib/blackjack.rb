@@ -30,7 +30,7 @@ end
 
 def hit?(current)
   prompt_user
-  num = get_user_input
+  num = get_user_input.to_i
   current + num
 
 end

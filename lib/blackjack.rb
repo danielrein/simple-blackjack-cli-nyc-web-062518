@@ -35,7 +35,7 @@ def hit?(num)
     total = num
   elsif i == 'h'
     total = num + deal_card
-    puts total
+    puts "total = #{total}"
   else
     invalid_command
     prompt_user
@@ -58,6 +58,7 @@ def runner
   until total > 21
     hit?(total)
     display_card_total(total)
+    total = total
   end
   end_game
 end

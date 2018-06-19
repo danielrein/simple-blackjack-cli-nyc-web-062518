@@ -28,13 +28,13 @@ def initial_round
   total
 end
 
-def hit?(total)
+def hit?(num)
   prompt_user
   i = get_user_input
   if i == 's'
-    total = total
+    total = num
   elsif i == 'h'
-    total = total + deal_card
+    total = num + deal_card
   else
     invalid_command
     prompt_user

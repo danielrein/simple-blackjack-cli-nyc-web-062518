@@ -24,7 +24,7 @@ end
 
 def initial_round
   total = deal_card + deal_card
-  puts "Your cards add up to #{total}"
+  # puts "Your cards add up to #{total}"
   total
 end
 
@@ -48,7 +48,7 @@ end
 
 def runner
   welcome
-  initial_round
+  total = initial_round
   until total > 21
     hit?
     display_card_total(total)
